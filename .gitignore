@@ -1,0 +1,27 @@
+var user = prompt("You just arrived at a crossroads while being chased by a pack of rabid squirrels. Do you go left, right or straight?").toUpperCase();
+
+switch (user) {
+    case 'LEFT':
+        var speed = prompt("How fast are you? Fast, slow or average?").toUpperCase();
+        if (speed === "FAST" || "AVERAGE"){
+            console.log("Good, you'll be ok, you can outrun the squirells at that speed.")
+            }
+        else {
+            console.log("You won't make it. The squirrels eat you")
+            }
+            break;
+    case 'STRAIGHT':
+        var brain = prompt("Are you smart? Yes or no.").toUpperCase();
+        var quick = prompt("Are you quick? Yes or no").toUpperCase();
+        if (brain === "YES" && quick === "YES") {
+            console.log("You'll make it, the squirrels stand no chance!")
+        }
+        else {console.log("AHH!! The squirrels have caught up")
+        }
+        break;
+    case 'RIGHT':
+        console.log("You chose the right path, you're safe! The squirrels won't find you here.")
+        break;
+    default:
+    console.log("You waited to long to pick, you get eaten like a bunch of acorns.");
+    };
